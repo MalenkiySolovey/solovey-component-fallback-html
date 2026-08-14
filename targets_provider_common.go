@@ -3,17 +3,12 @@
 package fallbackhtml
 
 import (
-	"context"
 	"crypto/sha256"
 	"encoding/hex"
 	"encoding/json"
-	"fmt"
 	"sort"
-	"strconv"
-	"strings"
 	"time"
 
-	neutral "github.com/MalenkiySolovey/solovey-ui/componenthost/fallbacktargets"
 	hostresources "github.com/MalenkiySolovey/solovey-ui/componenthost/resources"
 	fallbackdomain "github.com/MalenkiySolovey/solovey-ui/components/fallback-html/domain"
 	fallbackservice "github.com/MalenkiySolovey/solovey-ui/components/fallback-html/service"
@@ -37,86 +32,6 @@ type publishedRedirectFact struct {
 }
 
 func (targetProvider) ProviderID() string { return id }
-
-func (p targetProvider) ListTargets(ctx context.Context) ([]neutral.TargetV1, error) {
-	if p.db == nil {
-		return nil, fmt.Errorf("fallback-html database is unavailable")
-	}
-	var sites []fallbackdomain.Site
-	if err := p.db.WithContext(ctx).
-		Preload("Targets", func(tx *gorm.DB) *gorm.DB { return tx.Order("id ASC") }).
-		Preload("Publishes", func(tx *gorm.DB) *gorm.DB { return tx.Where("active = ?", true).Order("id ASC") }).
-		Preload("Publishes.Files", func(tx *gorm.DB) *gorm.DB { return tx.Order("public_path ASC, id ASC") }).
-		Where("enabled = ? AND status = ?", true, "published").Order("id ASC").Find(&sites).Error; err != nil {
-		return nil, err
-	}
-	now := time.Now
-	if p.now != nil {
-		now = p.now
-	}
-	observed := now().UTC()
-	status := fallbackservice.RuntimeStatus{}
-	health := fallbackservice.RuntimeHealth{}
-	if p.runtime != nil {
-		status = p.runtime.Status()
-		health = fallbackservice.New(p.db, p.runtime).RuntimeHealth()
-	}
-	result := make([]neutral.TargetV1, 0, len(sites))
-	for _, site := range sites {
-		if len(site.Publishes) == 0 {
-			continue
-		}
-		publish := site.Publishes[0]
-		ambiguous := len(site.Publishes) != 1
-		target, warnings, err := siteResourceTarget(site)
-		if err != nil {
-			return nil, err
-		}
-		normalized := hostresources.NormalizeListen(target.Listen)
-		port := uint16(0)
-		if target.Port > 0 && target.Port <= 65535 {
-			port = uint16(target.Port)
-		}
-		local := normalized.Class == hostresources.ListenLoopback
-		ready := neutral.ReadinessNotReady
-		reasons := []string(nil)
-		if len(warnings) > 0 {
-			reasons = append(reasons, "fallback_target_legacy_selection")
-			ambiguous = true
-		}
-		if len(site.Publishes) > 1 {
-			reasons = append(reasons, "fallback_target_publish_ambiguous")
-		}
-		management := hostresources.CapabilityYes
-		if strings.EqualFold(target.Kind, "standalone") && local {
-			management = hostresources.CapabilityNo
-			if p.runtime != nil && status.Active && health.OK && status.SiteID == site.ID && p.runtime.Owns(normalized.Value, target.Port) {
-				ready = neutral.ReadinessReady
-			} else {
-				reasons = append(reasons, "fallback_target_runtime_not_active")
-			}
-		} else {
-			reasons = append(reasons, "fallback_target_not_isolated_local_endpoint")
-		}
-		confidence := 10000
-		if ambiguous {
-			ready = neutral.ReadinessUnknown
-			confidence = 0
-			reasons = append(reasons, "fallback_target_ambiguous")
-		}
-		contentDigest := publishDigest(publish)
-		healthRevision := hostresources.Revision(struct {
-			Active                  bool
-			Healthy                 bool
-			SiteID                  uint
-			Pages, Redirects        int
-			PublishRevision, Listen string
-			Port                    int
-		}{status.Active, health.OK, status.SiteID, status.Pages, status.Redirects, publish.Version, normalized.Value, target.Port})
-		result = append(result, neutral.TargetV1{Schema: neutral.TargetSchemaV1, Identity: neutral.TargetIdentity{ProviderID: id, TargetID: "site:" + strconv.FormatUint(uint64(site.ID), 10)}, PublishRevision: publish.Version, ContentDigest: contentDigest, Endpoint: neutral.EndpointCapability{EndpointID: "fallback-html:endpoint:" + strconv.FormatUint(uint64(site.ID), 10) + ":" + strconv.FormatUint(uint64(target.ID), 10), Network: hostresources.NetworkTCP, Family: hostresources.AddressFamilyForListen(target.Listen), Bind: normalized.Value, Port: port, TLS: capability(target.TLS), Local: local, CanReachManagement: management}, Readiness: ready, ProviderHealthRevision: healthRevision, ObservedAt: observed.Unix(), ExpiresAt: observed.Add(90 * time.Second).Unix(), Source: "fallback-html:published-runtime", ConfidenceBP: confidence, ReasonCodes: reasons})
-	}
-	return result, nil
-}
 
 func publishDigest(publish fallbackdomain.Publish) string {
 	type fileFact struct {
@@ -206,11 +121,4 @@ func classifyPublishedRedirect(redirect fallbackdomain.PublishRedirect) (string,
 func digestPublishedRedirectValue(value string) string {
 	sum := sha256.Sum256([]byte(value))
 	return hex.EncodeToString(sum[:])
-}
-
-func capability(value bool) hostresources.CapabilityValue {
-	if value {
-		return hostresources.CapabilityYes
-	}
-	return hostresources.CapabilityNo
 }
