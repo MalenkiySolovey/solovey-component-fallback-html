@@ -1,0 +1,6 @@
+.host-ui/
+.frontend-check/
+frontend/node_modules/
+frontend/dist/
+*.test
+coverage.out

@@ -1,0 +1,7 @@
+* text=auto eol=lf
+*.go text eol=lf
+*.json text eol=lf
+*.mjs text eol=lf
+*.mts text eol=lf
+*.vue text eol=lf
+*.ts text eol=lf
