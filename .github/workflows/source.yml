@@ -1,0 +1,58 @@
+name: Fallback Sites source
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+    tags: ['v*']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  source:
+    name: fallback-source (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-24.04, windows-2025]
+    env:
+      GOWORK: 'off'
+      GOFLAGS: -mod=readonly
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-go@4a3601121dd01d1626a1e23e37211e3254c1c06c
+        with:
+          go-version-file: go.mod
+      - name: Source provenance and dependency boundaries
+        run: node scripts/check-source.mjs
+      - name: Publication, lifecycle and failure-path race regressions
+        run: go test -race -count=1 ./...
+      - name: Vet and minimal descriptor
+        run: |
+          go mod tidy -diff
+          go vet ./...
+          go test -tags minimal ./...
+      - name: Resolve accepted first-party UI API
+        id: sdk
+        run: node -e "const fs=require('fs');const pin=require('./HOST_UI_PIN.json');if(!/^[a-f0-9]{40}$/.test(pin.sourceCommit))throw Error('invalid UI SDK commit');fs.appendFileSync(process.env.GITHUB_OUTPUT,'commit='+pin.sourceCommit+'\n')"
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+        with:
+          repository: MalenkiySolovey/solovey-ui
+          ref: ${{ steps.sdk.outputs.commit }}
+          path: .host-ui
+          persist-credentials: false
+      - uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e
+        with:
+          node-version-file: .host-ui/frontend/.node-version
+          cache: npm
+          cache-dependency-path: .host-ui/frontend/package-lock.json
+      - run: npm ci
+        working-directory: .host-ui/frontend
+      - name: UI contribution, dynamic assets and locale regressions
+        run: node scripts/check-frontend.mjs .host-ui/frontend

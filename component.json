@@ -1,0 +1,46 @@
+{
+  "id": "fallback-html",
+  "name": "Fallback HTML",
+  "version": "1",
+  "since": "2026.2.2",
+  "delivery": "in-process",
+  "defaultEnabled": false,
+  "tokenScopes": [
+    "public-site"
+  ],
+  "frontend": {
+    "entries": [
+      "frontend/index.ts"
+    ]
+  },
+  "database": {
+	"schema": "solovey.durable-resource/v1",
+	"schemaVersion": "1",
+	"migrationVersion": "1",
+	"indexPolicy": "ALL_OWNED_TABLE_INDEXES",
+    "tables": [
+      "fallback_html_sites",
+      "fallback_html_pages",
+      "fallback_html_redirects",
+      "fallback_html_assets",
+      "fallback_html_publishes",
+      "fallback_html_publish_files",
+      "fallback_html_publish_redirects",
+      "fallback_html_safety_reports",
+      "fallback_html_template_sources",
+      "fallback_html_self_steal_drafts",
+      "fallback_html_runtime_targets",
+      "fallback_html_external_resources",
+      "fallback_html_events",
+      "fallback_html_target_reservations",
+	  "fallback_html_target_reservation_requests"
+	],
+	"backupCodec": "SQLITE_OWNER_V1",
+	"restoreHook": "MIGRATE_AND_VALIDATE_V1",
+	"dropDataPlan": "OWNER_LIFECYCLE_V1",
+	"dropPostcondition": "DECLARED_RESOURCES_ABSENT_V1",
+	"redactionClass": "SENSITIVE",
+	"portabilityClass": "PORTABLE",
+	"compatibilityRange": {"minimumSchema": "1", "maximumSchema": "1"}
+  }
+}

@@ -1,0 +1,585 @@
+{
+  "schema": "solovey.component.source-provenance/v1",
+  "component": "fallback-html",
+  "originalRepository": "https://github.com/MalenkiySolovey/solovey-ui",
+  "originalCommit": "04bb0c72a779d89b1763885743ac048db8dd1241",
+  "filteredHistoryCommit": "6212bc725c88e6fa4fa3757ae1ff527138c508ba",
+  "historyPolicy": "The complete filtered component ancestry is retained; per-file source blobs and authors attribute adapted feature algorithms. Product authority remains in the Backend adapters.",
+  "originalLicense": "GPL-3.0-only",
+  "licenseSHA256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+  "files": [
+    {
+      "source": "components/fallback-html/component.json",
+      "destination": "component.json",
+      "originalBlob": "3aacb3008b2c7700a6b7422f0a72895e6ce5ff6d",
+      "originalSHA256": "5593b4c3ad2c256b7ccd2539123e06f2817a12df39b49fbfbb0ea4e7077fcb9c",
+      "destinationSHA256": "5593b4c3ad2c256b7ccd2539123e06f2817a12df39b49fbfbb0ea4e7077fcb9c",
+      "adaptation": "Unchanged canonical descriptor",
+      "history": [
+        "6a99d0e4fe4c7047f0eca3ff96159ce4bdc93f13 2026-08-15T02:57:14+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "cb44ec3833acbc2d01ef4b6fba232aa97878fbf0 2026-08-12T00:37:51+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "427047b5ce595ead809020a451dc1282a10c00ca 2026-07-06T19:31:40+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>"
+      ]
+    },
+    {
+      "source": "components/fallback-html/component.go",
+      "destination": "descriptor.go",
+      "originalBlob": "4cb67aedca61908072cf6777b56a000021bc1ee8",
+      "originalSHA256": "07bfc91385012a68c9357e2e5b4fdb2265c62b50c04317cd690e7f2677386566",
+      "destinationSHA256": "6df7f99f38811753a138b6ea1c940dcbfa565b4babc48596b7a68b2b0aee4ced",
+      "adaptation": "Feature workflows and runtime behavior use typed Backend store/content/HTTP ports",
+      "history": [
+        "a92099366fbb67b598f0772ac0fa6d75580278f7 2026-11-12T14:37:19+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "7ade7787b53b29129ab8c85a82c040b71cb9be30 2026-10-04T23:36:43+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "c099b01ae5283f2ee5271117e042e51bc166c9ac 2026-09-14T02:18:00+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "6a99d0e4fe4c7047f0eca3ff96159ce4bdc93f13 2026-08-15T02:57:14+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "cb44ec3833acbc2d01ef4b6fba232aa97878fbf0 2026-08-12T00:37:51+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "427047b5ce595ead809020a451dc1282a10c00ca 2026-07-06T19:31:40+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>"
+      ]
+    },
+    {
+      "source": "components/fallback-html/component_test.go",
+      "destination": "descriptor_test.go",
+      "originalBlob": "961c3ea888e7c32bdd7674839cc994186f8beec3",
+      "originalSHA256": "a04b59837f46be1e73cba30d780a8ef4d202e3e05e86559544ed932e07965ab5",
+      "destinationSHA256": "847891aba728a6d2368da513bb08614d2e6f0b3ddbde6e141e3053e109ebe980",
+      "adaptation": "Feature workflows and runtime behavior use typed Backend store/content/HTTP ports",
+      "history": [
+        "a92099366fbb67b598f0772ac0fa6d75580278f7 2026-11-12T14:37:19+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "6a99d0e4fe4c7047f0eca3ff96159ce4bdc93f13 2026-08-15T02:57:14+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "cb44ec3833acbc2d01ef4b6fba232aa97878fbf0 2026-08-12T00:37:51+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "427047b5ce595ead809020a451dc1282a10c00ca 2026-07-06T19:31:40+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>"
+      ]
+    },
+    {
+      "source": "components/fallback-html/domain/models.go",
+      "destination": "domain/models.go",
+      "originalBlob": "c54b544696ba28549d23053871936cb6a60f45a4",
+      "originalSHA256": "a4b320da543636288ad7ef259148ccc7ce256228bfe91bc903dc3e1e26a83ee4",
+      "destinationSHA256": "a4b320da543636288ad7ef259148ccc7ce256228bfe91bc903dc3e1e26a83ee4",
+      "adaptation": "Portable models and algorithms; concrete schema and seed storage remain Backend",
+      "history": [
+        "6a99d0e4fe4c7047f0eca3ff96159ce4bdc93f13 2026-08-15T02:57:14+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "427047b5ce595ead809020a451dc1282a10c00ca 2026-07-06T19:31:40+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>"
+      ]
+    },
+    {
+      "source": "components/fallback-html/domain/path.go",
+      "destination": "domain/path.go",
+      "originalBlob": "7fc67ceaefbe29f06b962ff6d9ffa441c95277b4",
+      "originalSHA256": "294d0c1788e45ff446bb5f1878fb15601d5a8aca3634f7b73ce467f834ed6003",
+      "destinationSHA256": "294d0c1788e45ff446bb5f1878fb15601d5a8aca3634f7b73ce467f834ed6003",
+      "adaptation": "Portable models and algorithms; concrete schema and seed storage remain Backend",
+      "history": [
+        "427047b5ce595ead809020a451dc1282a10c00ca 2026-07-06T19:31:40+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>"
+      ]
+    },
+    {
+      "source": "components/fallback-html/domain/path_test.go",
+      "destination": "domain/path_test.go",
+      "originalBlob": "2008c025e7e8d8dd6da139b7f80dcc0367f1c371",
+      "originalSHA256": "549ab9a15c1c7dbd872f0444213367aef2e366f9103aec612442911a5b31289f",
+      "destinationSHA256": "549ab9a15c1c7dbd872f0444213367aef2e366f9103aec612442911a5b31289f",
+      "adaptation": "Portable models and algorithms; concrete schema and seed storage remain Backend",
+      "history": [
+        "427047b5ce595ead809020a451dc1282a10c00ca 2026-07-06T19:31:40+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>"
+      ]
+    },
+    {
+      "source": "components/fallback-html/domain/template.go",
+      "destination": "domain/template.go",
+      "originalBlob": "1c90af3dcd0d37d694813c6c0e376752cb276865",
+      "originalSHA256": "280a485270de61105c9714a90428fc844d8ccfce0f73865d6a04f9bd7218868f",
+      "destinationSHA256": "e445b08d86af9d75d0961b4b3f02d26639a55ce7eb0a1838d36f8d6635052dfe",
+      "adaptation": "Portable models and algorithms; concrete schema and seed storage remain Backend",
+      "history": [
+        "6a99d0e4fe4c7047f0eca3ff96159ce4bdc93f13 2026-08-15T02:57:14+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "cb44ec3833acbc2d01ef4b6fba232aa97878fbf0 2026-08-12T00:37:51+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "a50ab1642354fb448bceb43e3dfb896bb865053c 2026-07-07T20:52:19+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "427047b5ce595ead809020a451dc1282a10c00ca 2026-07-06T19:31:40+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>"
+      ]
+    },
+    {
+      "source": "components/fallback-html/domain/template_test.go",
+      "destination": "domain/template_test.go",
+      "originalBlob": "0ccc844894db014a65ea23f6e1b9037e40498a76",
+      "originalSHA256": "e8c5b6e829f06bb63810063c1539bd3425877f55b27ab6c3f7a4447687ac1f5b",
+      "destinationSHA256": "e8c5b6e829f06bb63810063c1539bd3425877f55b27ab6c3f7a4447687ac1f5b",
+      "adaptation": "Portable models and algorithms; concrete schema and seed storage remain Backend",
+      "history": [
+        "6a99d0e4fe4c7047f0eca3ff96159ce4bdc93f13 2026-08-15T02:57:14+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "cb44ec3833acbc2d01ef4b6fba232aa97878fbf0 2026-08-12T00:37:51+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "427047b5ce595ead809020a451dc1282a10c00ca 2026-07-06T19:31:40+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>"
+      ]
+    },
+    {
+      "source": "components/fallback-html/frontend/index.test.ts",
+      "destination": "frontend/index.test.ts",
+      "originalBlob": "6e6d9469877d91e1df862613a0808171a8843424",
+      "originalSHA256": "3e36e493785c63d48f0e57339ca3c8b397a1422bd1356809a160fcc8e8d9e204",
+      "destinationSHA256": "e2f9da684f5f566a5e6dc3ddd005b8c1df345706778c63b6dc5274fac6a0e232",
+      "adaptation": "Public authenticated SDK/API imports; existing routes, navigation, editor and locales",
+      "history": [
+        "427047b5ce595ead809020a451dc1282a10c00ca 2026-07-06T19:31:40+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>"
+      ]
+    },
+    {
+      "source": "components/fallback-html/frontend/index.ts",
+      "destination": "frontend/index.ts",
+      "originalBlob": "bd65b39065373fc50f31af892d10e48573975edb",
+      "originalSHA256": "68d673ade9360dd4d9076d107b21eaa918b141e49c20a7c5f3208df14399b38b",
+      "destinationSHA256": "68d673ade9360dd4d9076d107b21eaa918b141e49c20a7c5f3208df14399b38b",
+      "adaptation": "Public authenticated SDK/API imports; existing routes, navigation, editor and locales",
+      "history": [
+        "867193ff33b0b77e10e47feb41f83cfe0c20c048 2026-11-13T04:35:22+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "427047b5ce595ead809020a451dc1282a10c00ca 2026-07-06T19:31:40+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>"
+      ]
+    },
+    {
+      "source": "components/fallback-html/frontend/locales/en.ts",
+      "destination": "frontend/locales/en.ts",
+      "originalBlob": "b04103546a37b51864a226c7ffb284791265a606",
+      "originalSHA256": "9ffcd7b48c685418cffb49de00dd778ae2ad8ed37e8817ab5322123c720575b0",
+      "destinationSHA256": "9ffcd7b48c685418cffb49de00dd778ae2ad8ed37e8817ab5322123c720575b0",
+      "adaptation": "Public authenticated SDK/API imports; existing routes, navigation, editor and locales",
+      "history": [
+        "cb44ec3833acbc2d01ef4b6fba232aa97878fbf0 2026-08-12T00:37:51+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "a50ab1642354fb448bceb43e3dfb896bb865053c 2026-07-07T20:52:19+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "427047b5ce595ead809020a451dc1282a10c00ca 2026-07-06T19:31:40+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>"
+      ]
+    },
+    {
+      "source": "components/fallback-html/frontend/locales/ru.ts",
+      "destination": "frontend/locales/ru.ts",
+      "originalBlob": "91094bac6f3519f41cbe765c4f9f1915207a0e65",
+      "originalSHA256": "d10987ce5b2d85b7be024cc86010f1d535edfc3f3de00006d62efa89645b6468",
+      "destinationSHA256": "d10987ce5b2d85b7be024cc86010f1d535edfc3f3de00006d62efa89645b6468",
+      "adaptation": "Public authenticated SDK/API imports; existing routes, navigation, editor and locales",
+      "history": [
+        "cb44ec3833acbc2d01ef4b6fba232aa97878fbf0 2026-08-12T00:37:51+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "a50ab1642354fb448bceb43e3dfb896bb865053c 2026-07-07T20:52:19+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "427047b5ce595ead809020a451dc1282a10c00ca 2026-07-06T19:31:40+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>"
+      ]
+    },
+    {
+      "source": "components/fallback-html/frontend/publicSiteLogic.test.ts",
+      "destination": "frontend/publicSiteLogic.test.ts",
+      "originalBlob": "83d590d93148b23fe1cc912eaa89739fb38fb7ec",
+      "originalSHA256": "967f572656928b3d4dda61220eb3f0ce391e33be8db640f39e50385604704e69",
+      "destinationSHA256": "967f572656928b3d4dda61220eb3f0ce391e33be8db640f39e50385604704e69",
+      "adaptation": "Public authenticated SDK/API imports; existing routes, navigation, editor and locales",
+      "history": [
+        "cb44ec3833acbc2d01ef4b6fba232aa97878fbf0 2026-08-12T00:37:51+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "427047b5ce595ead809020a451dc1282a10c00ca 2026-07-06T19:31:40+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>"
+      ]
+    },
+    {
+      "source": "components/fallback-html/frontend/publicSiteLogic.ts",
+      "destination": "frontend/publicSiteLogic.ts",
+      "originalBlob": "265ec508d1d3deca6fcb8c7053de201eee04994a",
+      "originalSHA256": "209aeb415b9df47cda2a64cf880a22d5672721bf8a2f7021f645cb545bdb3002",
+      "destinationSHA256": "209aeb415b9df47cda2a64cf880a22d5672721bf8a2f7021f645cb545bdb3002",
+      "adaptation": "Public authenticated SDK/API imports; existing routes, navigation, editor and locales",
+      "history": [
+        "427047b5ce595ead809020a451dc1282a10c00ca 2026-07-06T19:31:40+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>"
+      ]
+    },
+    {
+      "source": "components/fallback-html/frontend/publicSiteTypes.ts",
+      "destination": "frontend/publicSiteTypes.ts",
+      "originalBlob": "7800c01cfb7a19884d4aef857520cc2f1c0936e6",
+      "originalSHA256": "813d2fb70818397f549cb81665a411615e9df31fb752b63163db5c851bfa65cd",
+      "destinationSHA256": "813d2fb70818397f549cb81665a411615e9df31fb752b63163db5c851bfa65cd",
+      "adaptation": "Public authenticated SDK/API imports; existing routes, navigation, editor and locales",
+      "history": [
+        "cb44ec3833acbc2d01ef4b6fba232aa97878fbf0 2026-08-12T00:37:51+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>"
+      ]
+    },
+    {
+      "source": "components/fallback-html/frontend/usePublicSite.ts",
+      "destination": "frontend/usePublicSite.ts",
+      "originalBlob": "34a91cb93fc402f4f7aedf1741dada979f30d6dc",
+      "originalSHA256": "0d68d756d5ec31f6dc0f9e901b5133eadedd8d18737d739675d893450a6c8f6c",
+      "destinationSHA256": "0d68d756d5ec31f6dc0f9e901b5133eadedd8d18737d739675d893450a6c8f6c",
+      "adaptation": "Public authenticated SDK/API imports; existing routes, navigation, editor and locales",
+      "history": [
+        "867193ff33b0b77e10e47feb41f83cfe0c20c048 2026-11-13T04:35:22+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "cb44ec3833acbc2d01ef4b6fba232aa97878fbf0 2026-08-12T00:37:51+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>"
+      ]
+    },
+    {
+      "source": "components/fallback-html/frontend/views/PublicSite.vue",
+      "destination": "frontend/views/PublicSite.vue",
+      "originalBlob": "5bfa9924cab6a9d207328d6639c5d89c850b8da7",
+      "originalSHA256": "a06f39df897a8bb04337000f8fc9322fa0e6944d8afd7b0ea3a374747b5e7f77",
+      "destinationSHA256": "a06f39df897a8bb04337000f8fc9322fa0e6944d8afd7b0ea3a374747b5e7f77",
+      "adaptation": "Public authenticated SDK/API imports; existing routes, navigation, editor and locales",
+      "history": [
+        "cb44ec3833acbc2d01ef4b6fba232aa97878fbf0 2026-08-12T00:37:51+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "a50ab1642354fb448bceb43e3dfb896bb865053c 2026-07-07T20:52:19+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "427047b5ce595ead809020a451dc1282a10c00ca 2026-07-06T19:31:40+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>"
+      ]
+    },
+    {
+      "source": "components/fallback-html/lifecycle/durable.go",
+      "destination": "lifecycle/durable.go",
+      "originalBlob": "55c39501ea00d222287c8143323f378eb3c6d653",
+      "originalSHA256": "10480716331d7e49e71b4e3e0578603a29e4138b7cf286c814a4902912c99ea2",
+      "destinationSHA256": "6191bf6606cf8ed6fb996a998bfa314b628aac65daa9c4be4447d5552150c607",
+      "adaptation": "Existing durable operation sequencing through canonical Host ports",
+      "history": [
+        "a92099366fbb67b598f0772ac0fa6d75580278f7 2026-11-12T14:37:19+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>"
+      ]
+    },
+    {
+      "source": "components/fallback-html/durable_admission_test.go",
+      "destination": "lifecycle/durable_test.go",
+      "originalBlob": "82e56bcd59ae8f1180190b68e46989cbe2d5f103",
+      "originalSHA256": "9817bbef8d811b6ef6d72c1b4185453e0110a8df20acd7e22204d9e4d640a631",
+      "destinationSHA256": "a5d02e738ad594a6b60423c38a4e86c1b357021ae1278dfb116856e21ec7b711",
+      "adaptation": "Existing durable operation sequencing through canonical Host ports",
+      "history": [
+        "24387c5311db6ebf7dbae741793bdcba38e5f26a 2026-11-12T19:26:15+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "9508c44904e85e70230e59424fcc3b706b850a3d 2026-11-12T15:10:15+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "a92099366fbb67b598f0772ac0fa6d75580278f7 2026-11-12T14:37:19+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>"
+      ]
+    },
+    {
+      "source": "components/fallback-html/service/assets.go",
+      "destination": "service/assets.go",
+      "originalBlob": "8873339bba6d317aa1181e6fc3db28990e2f2fc8",
+      "originalSHA256": "5ffafe128e8ee61fba787c72f9386ae3c133f3770debf1e2f6c30a656fc2c023",
+      "destinationSHA256": "c58661567754f8383ca28309c3ca015609d4275c8d4fe5a569a8e5537b75956d",
+      "adaptation": "Feature workflows and runtime behavior use typed Backend store/content/HTTP ports",
+      "history": [
+        "6a99d0e4fe4c7047f0eca3ff96159ce4bdc93f13 2026-08-15T02:57:14+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "cb44ec3833acbc2d01ef4b6fba232aa97878fbf0 2026-08-12T00:37:51+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "427047b5ce595ead809020a451dc1282a10c00ca 2026-07-06T19:31:40+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>"
+      ]
+    },
+    {
+      "source": "components/fallback-html/service/assets.go",
+      "destination": "service/content.go",
+      "originalBlob": "8873339bba6d317aa1181e6fc3db28990e2f2fc8",
+      "originalSHA256": "5ffafe128e8ee61fba787c72f9386ae3c133f3770debf1e2f6c30a656fc2c023",
+      "destinationSHA256": "518b5e3dba86636c2207844ee9e0c4475a5136c2ae275e0a1c95e7826ef23858",
+      "adaptation": "Feature workflows and runtime behavior use typed Backend store/content/HTTP ports",
+      "history": [
+        "6a99d0e4fe4c7047f0eca3ff96159ce4bdc93f13 2026-08-15T02:57:14+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "cb44ec3833acbc2d01ef4b6fba232aa97878fbf0 2026-08-12T00:37:51+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "427047b5ce595ead809020a451dc1282a10c00ca 2026-07-06T19:31:40+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>"
+      ]
+    },
+    {
+      "source": "components/fallback-html/service/service_test.go",
+      "destination": "service/content_workflow_test.go",
+      "originalBlob": "844baf71cdb6deab1274a097a1bdf59cd5661b6d",
+      "originalSHA256": "2af442bc68cbf576028552ee7885e3cffad6a95d420751df1ff12de9a6c3325d",
+      "destinationSHA256": "e5a25ef3f065b3a0b91eda7aa238db9af92da6efbcf2159e2a948b7a031bcdca",
+      "adaptation": "Feature workflows and runtime behavior use typed Backend store/content/HTTP ports",
+      "history": [
+        "e8e6990e31299b2c73dd5204cca8f43c6671ca03 2026-11-13T01:48:09+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "38190be58a8b1485f009a16b36c550afdb0c7b87 2026-11-12T23:38:59+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "bce74e69287bbabceeda82b4962f70e9727cde5c 2026-08-15T09:14:51+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "6a99d0e4fe4c7047f0eca3ff96159ce4bdc93f13 2026-08-15T02:57:14+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "cb44ec3833acbc2d01ef4b6fba232aa97878fbf0 2026-08-12T00:37:51+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "e3a3b43eb28f759884b9407ed847f003c693a246 2026-07-07T21:23:23+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "99e99d1204a88ac29cfe3f49c49f8004396810a3 2026-07-07T21:13:11+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "a50ab1642354fb448bceb43e3dfb896bb865053c 2026-07-07T20:52:19+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "427047b5ce595ead809020a451dc1282a10c00ca 2026-07-06T19:31:40+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>"
+      ]
+    },
+    {
+      "source": "components/fallback-html/service/decoy-interactivity.js",
+      "destination": "service/decoy-interactivity.js",
+      "originalBlob": "c6bec21630298232c593caae8cc980ef3333fa16",
+      "originalSHA256": "dbb3313de4fd137e21e4e6e1607f3f42187e03b177b529dca6ca2efd185a9772",
+      "destinationSHA256": "dbb3313de4fd137e21e4e6e1607f3f42187e03b177b529dca6ca2efd185a9772",
+      "adaptation": "Feature workflows and runtime behavior use typed Backend store/content/HTTP ports",
+      "history": [
+        "cb44ec3833acbc2d01ef4b6fba232aa97878fbf0 2026-08-12T00:37:51+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>"
+      ]
+    },
+    {
+      "source": "components/fallback-html/service/decoy_script.go",
+      "destination": "service/decoy_script.go",
+      "originalBlob": "67e9afd753debf5420fa1dbf24c63d98bf3f406a",
+      "originalSHA256": "7c979383648f62bbc783bfb7f12b19d22253bbc26e6366731ee84e31ee42e4f7",
+      "destinationSHA256": "7c979383648f62bbc783bfb7f12b19d22253bbc26e6366731ee84e31ee42e4f7",
+      "adaptation": "Feature workflows and runtime behavior use typed Backend store/content/HTTP ports",
+      "history": [
+        "cb44ec3833acbc2d01ef4b6fba232aa97878fbf0 2026-08-12T00:37:51+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>"
+      ]
+    },
+    {
+      "source": "components/fallback-html/service/health.go",
+      "destination": "service/health.go",
+      "originalBlob": "c8ba7d2fe84dc4088dc2c68422c781b60ba93501",
+      "originalSHA256": "f6377e60519ee639fbc76a3dfcb8fc86dcab29e39ad696f7f8699113faf94660",
+      "destinationSHA256": "7f85e524ec94ad44698833eec68ba9c703c7f8dfd2e0bad83ee00e9cf9b416fa",
+      "adaptation": "Feature workflows and runtime behavior use typed Backend store/content/HTTP ports",
+      "history": [
+        "38190be58a8b1485f009a16b36c550afdb0c7b87 2026-11-12T23:38:59+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "cb44ec3833acbc2d01ef4b6fba232aa97878fbf0 2026-08-12T00:37:51+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "427047b5ce595ead809020a451dc1282a10c00ca 2026-07-06T19:31:40+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>"
+      ]
+    },
+    {
+      "source": "components/fallback-html/service/host.go",
+      "destination": "service/host.go",
+      "originalBlob": "750726b2451f4c3a358203ad7ea4b1b7d5636e64",
+      "originalSHA256": "ee62161067b4aa72a6755e5c1a310a4bdaf8e3a8df41f62b7ea046357a54c103",
+      "destinationSHA256": "ee62161067b4aa72a6755e5c1a310a4bdaf8e3a8df41f62b7ea046357a54c103",
+      "adaptation": "Feature workflows and runtime behavior use typed Backend store/content/HTTP ports",
+      "history": [
+        "d03e112ccf950c4e7f0affbe753db2994a0f989b 2026-11-13T00:23:00+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "38190be58a8b1485f009a16b36c550afdb0c7b87 2026-11-12T23:38:59+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>"
+      ]
+    },
+    {
+      "source": "components/fallback-html/service/http_host.go",
+      "destination": "service/http_host.go",
+      "originalBlob": "11fd83f9eee2cd1de5b511cf30bc0b87d1e88ec0",
+      "originalSHA256": "4549620e25d0b0f7838affce6ca0781206fa46e3b6d38a57ec6541b040512d34",
+      "destinationSHA256": "a7e1e53235550c84fbf9cf6e047714666e259b7d9c5302189d71f068b65f9067",
+      "adaptation": "Feature workflows and runtime behavior use typed Backend store/content/HTTP ports",
+      "history": [
+        "d03e112ccf950c4e7f0affbe753db2994a0f989b 2026-11-13T00:23:00+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>"
+      ]
+    },
+    {
+      "source": "components/fallback-html/service/import.go",
+      "destination": "service/import.go",
+      "originalBlob": "dfe0abd82365f640612ee2f82de34ee9c74adb94",
+      "originalSHA256": "ef8fee8d995401efe617de512f16a1c510754d81abbc1b42655d1b113011534f",
+      "destinationSHA256": "6a7ac15ff38af4e1ee72d5674f37cf631f80205b326cc884d1c3cbd71b2a0fa9",
+      "adaptation": "Feature workflows and runtime behavior use typed Backend store/content/HTTP ports",
+      "history": [
+        "6a99d0e4fe4c7047f0eca3ff96159ce4bdc93f13 2026-08-15T02:57:14+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "cb44ec3833acbc2d01ef4b6fba232aa97878fbf0 2026-08-12T00:37:51+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "427047b5ce595ead809020a451dc1282a10c00ca 2026-07-06T19:31:40+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>"
+      ]
+    },
+    {
+      "source": "components/fallback-html/service/legacy_self_steal.go",
+      "destination": "service/legacy_self_steal.go",
+      "originalBlob": "dd17f01544365e25c9aa0cde45c902dce3a3f3fe",
+      "originalSHA256": "29e80027998b63c0d681b565a6562f696692bc5829b6be0984c990ca99b2f9bd",
+      "destinationSHA256": "18a79624ad3a3e4ba3d8e7ae3eed48338aebbfe7c4a5f775adbd081d7b3fa4ef",
+      "adaptation": "Feature workflows and runtime behavior use typed Backend store/content/HTTP ports",
+      "history": [
+        "cb44ec3833acbc2d01ef4b6fba232aa97878fbf0 2026-08-12T00:37:51+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>"
+      ]
+    },
+    {
+      "source": "components/fallback-html/service/node_artifact.go",
+      "destination": "service/node_artifact.go",
+      "originalBlob": "047d507b5012b7f9cffb2a5ee473b1e5a61831be",
+      "originalSHA256": "9a9dc04610797a2c5c1283d588e6ea925e2b2a95e527e4f9f2e1d371474ae0a1",
+      "destinationSHA256": "9a9dc04610797a2c5c1283d588e6ea925e2b2a95e527e4f9f2e1d371474ae0a1",
+      "adaptation": "Feature workflows and runtime behavior use typed Backend store/content/HTTP ports",
+      "history": [
+        "6a99d0e4fe4c7047f0eca3ff96159ce4bdc93f13 2026-08-15T02:57:14+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "427047b5ce595ead809020a451dc1282a10c00ca 2026-07-06T19:31:40+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>"
+      ]
+    },
+    {
+      "source": "components/fallback-html/service/publish.go",
+      "destination": "service/publish.go",
+      "originalBlob": "1744bbcea304c353ec760d1e4a990e650a885ba8",
+      "originalSHA256": "ea496d7e55240b78a9fb26bad6b793503e4bc25e5165db9966960ee43975150b",
+      "destinationSHA256": "97c321e5edc9951fcda5ba892a20ffadfed14a9813c85edcf22118adc409c14c",
+      "adaptation": "Feature workflows and runtime behavior use typed Backend store/content/HTTP ports",
+      "history": [
+        "d03e112ccf950c4e7f0affbe753db2994a0f989b 2026-11-13T00:23:00+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "6a99d0e4fe4c7047f0eca3ff96159ce4bdc93f13 2026-08-15T02:57:14+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "cb44ec3833acbc2d01ef4b6fba232aa97878fbf0 2026-08-12T00:37:51+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "a50ab1642354fb448bceb43e3dfb896bb865053c 2026-07-07T20:52:19+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "427047b5ce595ead809020a451dc1282a10c00ca 2026-07-06T19:31:40+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>"
+      ]
+    },
+    {
+      "source": "components/fallback-html/service/remote_templates.go",
+      "destination": "service/remote_templates.go",
+      "originalBlob": "4c6486065ae2d86c78a50c75f665fc3a6cfce075",
+      "originalSHA256": "4c8c1aee6f02d3564be5919a9cd1f3ee845c1c193413755edb9912e402e68c60",
+      "destinationSHA256": "502f528dd631d2bd620478c7baaaff0faf63cc7bb32e6b35bfea93ea41fb22fb",
+      "adaptation": "Feature workflows and runtime behavior use typed Backend store/content/HTTP ports",
+      "history": [
+        "3ade2631b61f81c47b2ca4179665500ab097f195 2026-09-16T14:15:21+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "6a99d0e4fe4c7047f0eca3ff96159ce4bdc93f13 2026-08-15T02:57:14+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "cb44ec3833acbc2d01ef4b6fba232aa97878fbf0 2026-08-12T00:37:51+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "a50ab1642354fb448bceb43e3dfb896bb865053c 2026-07-07T20:52:19+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "427047b5ce595ead809020a451dc1282a10c00ca 2026-07-06T19:31:40+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>"
+      ]
+    },
+    {
+      "source": "components/fallback-html/service/reservation_guard.go",
+      "destination": "service/reservation_guard.go",
+      "originalBlob": "e2410456b87d73aec0e89fdc76b7113a66df932f",
+      "originalSHA256": "a095fa6a482c850f7f99766bebce69df3729a33ba7b67b110023e09b50f31403",
+      "destinationSHA256": "f48bb5e5c408db534512abd2662661742c86f920e6b714ba1378ea74801ee915",
+      "adaptation": "Feature workflows and runtime behavior use typed Backend store/content/HTTP ports",
+      "history": [
+        "d03e112ccf950c4e7f0affbe753db2994a0f989b 2026-11-13T00:23:00+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "6a99d0e4fe4c7047f0eca3ff96159ce4bdc93f13 2026-08-15T02:57:14+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "cb44ec3833acbc2d01ef4b6fba232aa97878fbf0 2026-08-12T00:37:51+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>"
+      ]
+    },
+    {
+      "source": "components/fallback-html/service/runtime.go",
+      "destination": "service/runtime.go",
+      "originalBlob": "7cfe5e2bf98e2b9a0d101b4911c3080a41fe77b6",
+      "originalSHA256": "d3c397c0e67c426ad548c9d5d38f7d864fdf43fa907b1ec46ca5bfa01c47c744",
+      "destinationSHA256": "f2254e3f931f131f19e0ad06cd346a3a82b3b2cf231010ced21264415be18d5f",
+      "adaptation": "Feature workflows and runtime behavior use typed Backend store/content/HTTP ports",
+      "history": [
+        "d03e112ccf950c4e7f0affbe753db2994a0f989b 2026-11-13T00:23:00+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "38190be58a8b1485f009a16b36c550afdb0c7b87 2026-11-12T23:38:59+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "7ade7787b53b29129ab8c85a82c040b71cb9be30 2026-10-04T23:36:43+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "6a99d0e4fe4c7047f0eca3ff96159ce4bdc93f13 2026-08-15T02:57:14+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "cb44ec3833acbc2d01ef4b6fba232aa97878fbf0 2026-08-12T00:37:51+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "a50ab1642354fb448bceb43e3dfb896bb865053c 2026-07-07T20:52:19+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "427047b5ce595ead809020a451dc1282a10c00ca 2026-07-06T19:31:40+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>"
+      ]
+    },
+    {
+      "source": "components/fallback-html/service/runtime.go",
+      "destination": "service/runtime_ports.go",
+      "originalBlob": "7cfe5e2bf98e2b9a0d101b4911c3080a41fe77b6",
+      "originalSHA256": "d3c397c0e67c426ad548c9d5d38f7d864fdf43fa907b1ec46ca5bfa01c47c744",
+      "destinationSHA256": "6cab8fde125c16077d4ad9eb22843a5dc340030c9551e9f5eea7ff30fb816442",
+      "adaptation": "Feature workflows and runtime behavior use typed Backend store/content/HTTP ports",
+      "history": [
+        "d03e112ccf950c4e7f0affbe753db2994a0f989b 2026-11-13T00:23:00+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "38190be58a8b1485f009a16b36c550afdb0c7b87 2026-11-12T23:38:59+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "7ade7787b53b29129ab8c85a82c040b71cb9be30 2026-10-04T23:36:43+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "6a99d0e4fe4c7047f0eca3ff96159ce4bdc93f13 2026-08-15T02:57:14+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "cb44ec3833acbc2d01ef4b6fba232aa97878fbf0 2026-08-12T00:37:51+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "a50ab1642354fb448bceb43e3dfb896bb865053c 2026-07-07T20:52:19+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "427047b5ce595ead809020a451dc1282a10c00ca 2026-07-06T19:31:40+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>"
+      ]
+    },
+    {
+      "source": "components/fallback-html/service/runtime_http_test.go",
+      "destination": "service/runtime_test.go",
+      "originalBlob": "6a0ab2661ea9e9998da1678e726cb5a02a1b1fb8",
+      "originalSHA256": "1abf5b02268f6778ea5577f59fbdabd1e9f0939431acda1258e71fc72af1e3f5",
+      "destinationSHA256": "33b731458d0833dd06aa9a3798aaf5a8596bd2a138b2f74b5747df624e2812d5",
+      "adaptation": "Feature workflows and runtime behavior use typed Backend store/content/HTTP ports",
+      "history": [
+        "e8e6990e31299b2c73dd5204cca8f43c6671ca03 2026-11-13T01:48:09+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "d03e112ccf950c4e7f0affbe753db2994a0f989b 2026-11-13T00:23:00+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>"
+      ]
+    },
+    {
+      "source": "components/fallback-html/service/service.go",
+      "destination": "service/service.go",
+      "originalBlob": "51e6468b9f96dee1d4052ff90dc389b31cd39240",
+      "originalSHA256": "9c45c32971d87975909baa39fb95fcf8c44ada2c484b6e66bf386ddc6f1a8389",
+      "destinationSHA256": "696006c3818f850997ccd381bb11d1528ca1a85dc05ccda68d21b5ab2592c2d1",
+      "adaptation": "Feature workflows and runtime behavior use typed Backend store/content/HTTP ports",
+      "history": [
+        "d03e112ccf950c4e7f0affbe753db2994a0f989b 2026-11-13T00:23:00+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "38190be58a8b1485f009a16b36c550afdb0c7b87 2026-11-12T23:38:59+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "5c3b3523d28ac41ade0276252c4ddb46fada233b 2026-11-07T03:01:38+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "c099b01ae5283f2ee5271117e042e51bc166c9ac 2026-09-14T02:18:00+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "6a99d0e4fe4c7047f0eca3ff96159ce4bdc93f13 2026-08-15T02:57:14+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "cb44ec3833acbc2d01ef4b6fba232aa97878fbf0 2026-08-12T00:37:51+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "a50ab1642354fb448bceb43e3dfb896bb865053c 2026-07-07T20:52:19+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "427047b5ce595ead809020a451dc1282a10c00ca 2026-07-06T19:31:40+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>"
+      ]
+    },
+    {
+      "source": "components/fallback-html/service/service_test.go",
+      "destination": "service/source_algorithms_test.go",
+      "originalBlob": "844baf71cdb6deab1274a097a1bdf59cd5661b6d",
+      "originalSHA256": "2af442bc68cbf576028552ee7885e3cffad6a95d420751df1ff12de9a6c3325d",
+      "destinationSHA256": "ea1bf6e59763f2fa7f73225cbf84a5535d39d955d286c7a91e951f9e09c6296f",
+      "adaptation": "Feature workflows and runtime behavior use typed Backend store/content/HTTP ports",
+      "history": [
+        "e8e6990e31299b2c73dd5204cca8f43c6671ca03 2026-11-13T01:48:09+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "38190be58a8b1485f009a16b36c550afdb0c7b87 2026-11-12T23:38:59+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "bce74e69287bbabceeda82b4962f70e9727cde5c 2026-08-15T09:14:51+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "6a99d0e4fe4c7047f0eca3ff96159ce4bdc93f13 2026-08-15T02:57:14+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "cb44ec3833acbc2d01ef4b6fba232aa97878fbf0 2026-08-12T00:37:51+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "e3a3b43eb28f759884b9407ed847f003c693a246 2026-07-07T21:23:23+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "99e99d1204a88ac29cfe3f49c49f8004396810a3 2026-07-07T21:13:11+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "a50ab1642354fb448bceb43e3dfb896bb865053c 2026-07-07T20:52:19+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "427047b5ce595ead809020a451dc1282a10c00ca 2026-07-06T19:31:40+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>"
+      ]
+    },
+    {
+      "source": "components/fallback-html/service/service.go",
+      "destination": "service/store.go",
+      "originalBlob": "51e6468b9f96dee1d4052ff90dc389b31cd39240",
+      "originalSHA256": "9c45c32971d87975909baa39fb95fcf8c44ada2c484b6e66bf386ddc6f1a8389",
+      "destinationSHA256": "fd241d454a631e8968f53feba431e15a2c5da5bd23ffc6ee623aa3101b60e41b",
+      "adaptation": "Feature workflows and runtime behavior use typed Backend store/content/HTTP ports",
+      "history": [
+        "d03e112ccf950c4e7f0affbe753db2994a0f989b 2026-11-13T00:23:00+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "38190be58a8b1485f009a16b36c550afdb0c7b87 2026-11-12T23:38:59+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "5c3b3523d28ac41ade0276252c4ddb46fada233b 2026-11-07T03:01:38+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "c099b01ae5283f2ee5271117e042e51bc166c9ac 2026-09-14T02:18:00+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "6a99d0e4fe4c7047f0eca3ff96159ce4bdc93f13 2026-08-15T02:57:14+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "cb44ec3833acbc2d01ef4b6fba232aa97878fbf0 2026-08-12T00:37:51+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "a50ab1642354fb448bceb43e3dfb896bb865053c 2026-07-07T20:52:19+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "427047b5ce595ead809020a451dc1282a10c00ca 2026-07-06T19:31:40+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>"
+      ]
+    },
+    {
+      "source": "components/fallback-html/service/targets.go",
+      "destination": "service/targets.go",
+      "originalBlob": "a02e5d2f8ec243cc6130958d70f6c1546e5dd6ab",
+      "originalSHA256": "6ceea2a9fca9b04393e37c1668d27002cbd40e23278d9e1a6b8055a538aca8e1",
+      "destinationSHA256": "9526709a2d899a1b4cf6b2d807ec9f2fb549e848682b8e420463504592908628",
+      "adaptation": "Feature workflows and runtime behavior use typed Backend store/content/HTTP ports",
+      "history": [
+        "d03e112ccf950c4e7f0affbe753db2994a0f989b 2026-11-13T00:23:00+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "38190be58a8b1485f009a16b36c550afdb0c7b87 2026-11-12T23:38:59+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "6a99d0e4fe4c7047f0eca3ff96159ce4bdc93f13 2026-08-15T02:57:14+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "cb44ec3833acbc2d01ef4b6fba232aa97878fbf0 2026-08-12T00:37:51+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "a50ab1642354fb448bceb43e3dfb896bb865053c 2026-07-07T20:52:19+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "427047b5ce595ead809020a451dc1282a10c00ca 2026-07-06T19:31:40+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>"
+      ]
+    },
+    {
+      "source": "components/fallback-html/service/target_observation.go",
+      "destination": "service/target_observation.go",
+      "originalBlob": "4355e0b6030dad89c68a9f496b68e3207d55e153",
+      "originalSHA256": "0f9b699d1ee76cbdc0395e93c6566d5ccb0db469dbaa4ba02a3fe0663e658b92",
+      "destinationSHA256": "0e6a510af9c5d2d5da97bb7cba462b5212a50b27c552204746473e960e2fc3f6",
+      "adaptation": "Feature workflows and runtime behavior use typed Backend store/content/HTTP ports",
+      "history": [
+        "d03e112ccf950c4e7f0affbe753db2994a0f989b 2026-11-13T00:23:00+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "38190be58a8b1485f009a16b36c550afdb0c7b87 2026-11-12T23:38:59+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>"
+      ]
+    },
+    {
+      "source": "components/fallback-html/targets_provider_common.go",
+      "destination": "targets/publication.go",
+      "originalBlob": "3a1c5ea2a63944ccd2008242c0c0d6c8d9f655ce",
+      "originalSHA256": "08165c079766fa5df3c75cd3097a6ebb9fd815f2b5e4412c12a0f697d0db3b2f",
+      "destinationSHA256": "2ba3aa705203e3bab89a6be767cd5034af0a8cf3bf7293ae1fb5ba5911f0d839",
+      "adaptation": "Existing target digest, redirect and server-name algorithms; registry and reservations remain Backend",
+      "history": [
+        "38190be58a8b1485f009a16b36c550afdb0c7b87 2026-11-12T23:38:59+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "6a99d0e4fe4c7047f0eca3ff96159ce4bdc93f13 2026-08-15T02:57:14+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>"
+      ]
+    },
+    {
+      "source": "components/fallback-html/targets_provider_v2_test.go",
+      "destination": "targets/publication_test.go",
+      "originalBlob": "caf9a6b48e923b0349cf13b29262173c4ae88512",
+      "originalSHA256": "b161abcf1fb3c69db31a645273fe46859954f142e2f87a61cb69a9df5e4a5429",
+      "destinationSHA256": "4d5fb88603ea746ac3bd8af09f2fc20034b75fe93a55cac8464024a6b22d08e1",
+      "adaptation": "Existing target digest, redirect and server-name algorithms; registry and reservations remain Backend",
+      "history": [
+        "d03e112ccf950c4e7f0affbe753db2994a0f989b 2026-11-13T00:23:00+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "38190be58a8b1485f009a16b36c550afdb0c7b87 2026-11-12T23:38:59+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>",
+        "cb44ec3833acbc2d01ef4b6fba232aa97878fbf0 2026-08-12T00:37:51+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com>"
+      ]
+    }
+  ],
+  "authoredFiles": {}
+}

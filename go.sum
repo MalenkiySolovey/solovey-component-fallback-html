@@ -1,0 +1,4 @@
+github.com/MalenkiySolovey/solovey-host v0.4.0 h1:T+SSi01LwyI00KarblddtvuK/jq57Jtud5Z8Iw3VcnQ=
+github.com/MalenkiySolovey/solovey-host v0.4.0/go.mod h1:BUYlv5O5C9TrMoulPD+aNflUfPccG7N9DAJilI3itXI=
+golang.org/x/net v0.62.0 h1:18ELalfM5+XNRwzM2nYqXsZQ9ByS1uhj2O/U7+5jqRY=
+golang.org/x/net v0.62.0/go.mod h1:WgDCOTH8iwtB66T4/GfI94AHo/hhdb7Hah9NDseQfiI=
